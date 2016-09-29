@@ -1,0 +1,68 @@
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  flex-direction: column;
+}
+
+.standard-form {
+  border-radius: 5px;
+  border-color: #D49090;
+  border-style: solid;
+  border-width: 2px;
+
+  background-color: whitesmoke;
+
+  height: 400px;
+  width: 600px;
+
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.standard-input {
+  margin-top: 40px;
+
+  width: 75%;
+  height: 10%;
+
+  font-family: Futura;
+  font-size: 14px;
+  letter-spacing: 1px;
+
+  padding-left: 10px;
+}
+
+.standard-button {
+  position: relative;
+  margin-top: 40px;
+  left: 30%;
+
+  width: 100px;
+  height: 40px;
+
+  background-color: #D49090;
+
+  font-family: Futura;
+  font-size: 18px;
+  letter-spacing: 1px;
+
+  text-align: center;
+  line-height: 40px;
+  vertical-align: middle;
+  color: white;
+
+  border-radius: 2px;
+}
+
+#winner {
+
+}
+
+.icon {
+  height: 50px;
+  width: 50px;
+}

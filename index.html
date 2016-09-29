@@ -1,0 +1,24 @@
+<div ng-app="ridesharingApp">
+  <div class="container flex" ng-controller="QueryController">
+    <form class="standard-form flex" name="ride-info">
+      <input class="standard-input" type="text" ng-model="fromLoc" name="from" placeholder="Enter your current address">
+      <input class="standard-input" type="text" ng-model="toLoc" name="to" placeholder="Enter your destination address">
+      <br>
+      <div class="standard-button" ng-click="ride()">
+        Ride!
+      </div>
+    </form>
+    <div id="winner">
+      <div ng-if="isUber">
+        <img class="icon" src="http://redsgn.co/wp-content/uploads/2016/02/1247-Uber-app-icon-redesign-before.jpg">
+      </div>
+      <div ng-if="isLyft">
+        <img class="icon" src="https://lh5.ggpht.com/CfRup8ZMEbNpd4sf8PDUWzbnFIq0QINZpJ96M6V0-8wLmyqKD0ORSqPOq5EKdL1OskE=w300">
+      </div>
+    </div>
+    <div>
+    {{ authCred }}
+    </div>
+    <div> {{ return }} </div>
+  </div>
+</div>
